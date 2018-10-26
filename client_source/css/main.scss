@@ -1,0 +1,168 @@
+/* ============================================================================= */
+/* ======================== Start: Main Styles ================================= */
+/* ============================================================================= */
+@import "mixins.scss";
+
+#main-container {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: $bodyText;
+  color: $bodyTextColor;
+}
+
+.data-set-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+}
+
+.data-card {
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  background-color: #F7F7F7;
+  border: #E5E5E5 1px solid;
+  @include border-radius;
+  @include no-select;
+  cursor: pointer;
+  margin: 3px;
+  position: relative;
+  p {
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    font-weight: 600;
+  }
+}
+
+.data-text {
+  font-family: $headlineText;
+  margin-top: 115px;
+}
+
+.data-alt-text {
+  font-family: $headlineText;
+  font-size: 250%;
+}
+
+.data-text-sub {
+  font-family: $bodyText;
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+}
+
+.data-text-weather {
+  font-family: $headlineText;
+  margin-bottom: 3px;
+}
+
+.data-alt-text-weather {
+  font-family: $headlineText;
+  font-size: 250%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+// Start: Data card icons ......................................................
+.dc-bg-time {
+  background: #F7F7F7 url('../img/data-icon-time.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-weather {
+  background: #F7F7F7 url('../img/data-icon-weather.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-property {
+  background: #F7F7F7 url('../img/data-icon-property.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-gas-price {
+  background: #F7F7F7 url('../img/data-icon-gas-price.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-household-income {
+  background: #F7F7F7 url('../img/data-icon-household-income.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-population {
+  background: #F7F7F7 url('../img/data-icon-population.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-airport {
+  background: #F7F7F7 url('../img/data-icon-airport.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-crime {
+  background: #F7F7F7 url('../img/data-icon-crime.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+.dc-bg-language {
+  background: #F7F7F7 url('../img/data-icon-language.svg') no-repeat;
+  background-size: 50px;
+  background-position: 14px 10px;
+}
+
+// End: Data card icons ........................................................
+// Start: Data card chart box ..................................................
+.data-chart-box {
+  width: 200px;
+  height: 170px;
+  margin: 65px auto 15px auto;
+}
+
+.doughnut-directive-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// End: Data card chart box ....................................................
+
+// Google Map =====================================
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+//Weather Box =====================================
+
+.current-five-icon {
+  margin-top: 20px;
+
+  .weather-icon {
+    width: 70px;
+  }
+}
+
+.current-five-conditions {
+  font-family: $bodyText;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  line-height: 25px;
+}
+
+/* ============================================================================= */
+/* ======================== End: Main Styles =================================== */
+/* ============================================================================= */
